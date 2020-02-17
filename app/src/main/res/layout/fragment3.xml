@@ -6,7 +6,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="동무 목록"
+        android:text="오늘의 늬우스"
         android:textSize="30sp"
         android:gravity="center"
         />
