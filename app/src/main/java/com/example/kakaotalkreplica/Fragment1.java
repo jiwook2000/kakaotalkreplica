@@ -34,6 +34,8 @@ public class Fragment1 extends Fragment {
         for(int i=0;i<50;i++) {
 
             myDataset.add(new ChatData());
+            myDataset.get(i).setNick("홍길동"+(i+1));
+            myDataset.get(i).setMsg("ㄴr는...가끔 눈물을 흘린ㄷr....");
         }
         recyclerView = rootVIew.findViewById(R.id.RecyclerView_ChatScreen);
         recyclerView.setHasFixedSize(true);
