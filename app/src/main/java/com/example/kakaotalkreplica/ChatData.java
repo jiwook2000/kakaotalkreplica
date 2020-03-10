@@ -26,7 +26,7 @@ public class ChatData{
     }
     public ChatData() {
         this.nick="홍길동";
-        this.msg="아버지를 아버지라 부르지 못하고...";
+        this.msg="나대지마라 시발";
 
     }
 }
