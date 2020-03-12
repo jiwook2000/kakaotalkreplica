@@ -9,12 +9,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class LoginActivity extends AppCompatActivity {
 
     private EditText editId;
     private EditText editPw;
-    private String myId="Chung";
-    private String myPw="1234";
+    ArrayList<LoginData> loginDataset = new ArrayList<>();
+    LoginData loginData;
+
+
 
 
     @Override
@@ -22,8 +27,16 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
+        loginDataset.add(new LoginData("a","a"));
+        loginDataset.add(new LoginData("b","b"));
+
+
         editId=findViewById(R.id.editId);
         editPw=findViewById(R.id.editPw);
+
+
+
 
         Button btnLogin = findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -31,8 +44,9 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String id=editId.getText().toString();
                 String pw=editPw.getText().toString();
+                loginData = new LoginData(id,pw);
 
-                if(id.equals(myId) && pw.equals(myPw)){
+                if(loginDataset.contains(loginData)){
                     Intent intent=new Intent(getApplicationContext(),MainActivity.class);
                     intent.putExtra("id",id);
                     intent.putExtra("pw",pw);

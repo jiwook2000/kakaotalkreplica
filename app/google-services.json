@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "925874318109",
+    "firebase_url": "https://kakaotalkreplica.firebaseio.com",
+    "project_id": "kakaotalkreplica",
+    "storage_bucket": "kakaotalkreplica.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925874318109:android:303d97b398a240b0800ff4",
+        "android_client_info": {
+          "package_name": "com.example.kakaotalkreplica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925874318109-v6lap7blo5dob0nninfbha1he0e8h6lc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBimBA60DV2P6El3x327QZOYqso0XxvrxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925874318109-v6lap7blo5dob0nninfbha1he0e8h6lc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,6 +3,7 @@ package com.example.kakaotalkreplica;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,10 +23,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent intent = getIntent();
+        String id = intent.getExtras().getString("id");
+        String pw = intent.getExtras().getString("pw");
+
+
         fragment1 = new Fragment1();
         fragment2 = new Fragment2();
         fragment3 = new Fragment3();
         fragment4 = new Fragment4();
+
+        Bundle bundle = new Bundle();
+        bundle.putString("id",id);
+        bundle.putString("pw",pw);
+
+        fragment2.setArguments(bundle);
+
 
         Button btn1=findViewById(R.id.btnFriend);
         Button btn2=findViewById(R.id.btnChat);
